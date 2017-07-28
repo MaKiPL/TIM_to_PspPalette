@@ -26,9 +26,9 @@ namespace TIMpal_to_JASC
             }
             if(args.Length == 2)
             {
-                TIM tim = new TIM(args[1]);
+                TIM tim = new TIM(args[0]);
                 string[] retme = tim.ConvertToPS;
-                System.IO.File.WriteAllLines(args[2], retme);
+                System.IO.File.WriteAllLines(args[1], retme);
                 Console.WriteLine("Converted!");
             }
         }
